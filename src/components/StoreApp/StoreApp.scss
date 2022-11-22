@@ -1,0 +1,162 @@
+.store_container_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e6f7ef;
+  height: max-content;
+  height: 533.5px;
+  @media screen and (max-width: 776px) {
+    height: 780px;
+    justify-content: flex-start;
+    padding-top: 50px;
+  }
+  .store_container {
+    width: 100%;
+    padding: 0 12.6rem;
+    @media screen and (max-width: 1033px) {
+      padding: 6rem;
+    }
+    @media screen and (max-width: 776px) {
+      padding: 0.7rem;
+    }
+    .store_content {
+      background: #0c0932;
+      border-radius: 12px;
+      position: relative;
+      padding: 50px;
+      display: flex;
+
+      @media screen and (max-width: 776px) {
+        flex-direction: column;
+        height: 590px;
+        display: flex;
+        // justify-content: center;
+        align-items: center !important;
+        padding: 10px;
+      }
+      @media screen and (max-width: 525px) {
+        height: 650px;
+      }
+
+      .store_content_app {
+        display: flex;
+        flex-direction: column;
+
+        .store_content_phone_cont {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @media screen and (max-width: 776px) {
+            // flex-direction: column;
+            // height: 590px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // border: 2px solid yellow;
+          }
+        }
+      }
+
+      .store_content_text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 55px;
+        color: #07c168;
+        max-width: 30rem;
+        margin-bottom: 20px;
+        @media screen and (max-width: 1388px) {
+          font-size: 25px;
+          max-width: 17rem;
+          line-height: 45px;
+        }
+        @media screen and (max-width: 1170px) {
+          max-width: 20rem;
+        }
+        @media screen and (max-width: 776px) {
+          text-align: center;
+          // max-width: unset;
+          margin-bottom: 0px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 42px;
+          text-align: center;
+          letter-spacing: 0.03em;
+          width: 100%;
+        }
+      }
+      .store_content_btns {
+        display: flex;
+        column-gap: 10px;
+        // @media screen and (max-width: 525px) {
+        //   flex-direction: column;
+        //   row-gap: 1rem;
+        //   margin-top: 2rem;
+        // }
+
+        @media screen and (max-width: 776px) {
+          flex-direction: column;
+          row-gap: 1rem;
+          margin-top: 2rem;
+          max-width: unset;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 6rem;
+        }
+        @media screen and (max-width: 525px) {
+          flex-direction: column-reverse;
+        }
+
+        .store_icons {
+          width: 163.53px;
+          height: 57.76px;
+          cursor: pointer;
+          @media screen and (max-width: 525px) {
+            width: 153.9px;
+          }
+        }
+      }
+
+      .store_content_phone {
+        // display: flex;
+        position: absolute;
+        width: 330px;
+        height: 470px;
+        top: -67.21px;
+        right: 129px;
+        background: url(../../assets/iPhone13.webp);
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 1263px) {
+          font-size: 25px;
+          right: 50px;
+          // border: 2px solid indianred;
+        }
+        @media screen and (max-width: 776px) {
+          height: 430px;
+          display: flex;
+          position: unset;
+          justify-content: center;
+          align-items: center;
+        }
+        @media screen and (max-width: 776px) {
+          background: url("../../assets/iPhone13mb.png");
+          background-repeat: no-repeat;
+          // margin: 0 7rem;
+          width: 250px;
+          height: 700px;
+
+          background-size: contain;
+        }
+      }
+    }
+  }
+}

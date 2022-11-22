@@ -1,0 +1,29 @@
+.faq_wrapper {
+
+  // height: 705px;
+  .faq_row {
+    align-items: center;
+  
+    .faq_collapse {
+  
+      // height: 602rem !important;
+      margin-bottom: 3rem;
+      @media screen and (max-width: 525px) {
+        // height: 602rem !important;
+      }
+    }
+    .faq_header_1 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 55px;
+      color: #07c168;
+      // max-width: 454px;
+      @media screen and (max-width: 525px) {
+        font-size: 28px;
+        line-height: 42px;
+        letter-spacing: 0.03em;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

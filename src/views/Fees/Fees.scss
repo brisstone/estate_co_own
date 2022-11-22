@@ -1,0 +1,17 @@
+.fees_cover {
+  .fees_table_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10rem;
+  }
+
+  .fees_like_cont {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    .fees_like_actions {
+      display: flex;
+      column-gap: 3rem;
+    }
+  }
+}

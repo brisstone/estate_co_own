@@ -1,0 +1,180 @@
+@use "~sass-rem" as rem;
+.support_wrapper {
+  background: #e6f7ef;
+  .support_cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // justify-content: center;
+    // border: 2px solid black;
+    padding: 3rem 6rem;
+    row-gap: 6rem;
+    @media screen and (max-width: 525px) {
+      padding: 0 10px;
+    }
+    .support_form_cont {
+      position: relative;
+      z-index: 10000;
+      // width: 738px;
+      width: rem.convert(738px);
+      height: 901px;
+      border: 0.5px solid #bdbdbd;
+      border-radius: 8px;
+      padding: 2rem;
+      background: #ffffff;
+      @media screen and (max-width: 1413px) {
+        // width: rem.convert(600px);
+        width: 100%;
+      }
+      @media screen and (max-width: 1424px) {
+        // width: rem.convert(600px);
+        // width: 100%;
+        height: unset;
+      }
+      .support_header {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 42px;
+        color: #0c0932;
+        margin-bottom: 2rem;
+      }
+      .support_header2 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #0c0932;
+        margin-bottom: 1rem;
+      }
+      .support_checkbox {
+        display: flex;
+        column-gap: 20px;
+      }
+      .support_checkbox_cont {
+        display: flex;
+        column-gap: 5px;
+      }
+      .support_input_cont {
+        .support_input_form {
+          margin-top: 2rem;
+          .input_div {
+            width: 100%;
+
+            @media screen and (max-width: 7px) {
+            }
+          }
+        }
+        .support_input_cont_label {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          color: #0c0932;
+          margin-bottom: 8px;
+        }
+        .support_button {
+          display: flex;
+          justify-content: center;
+          margin-top: 2rem;
+        }
+      }
+    }
+    .support_img_cont {
+      display: flex;
+      flex-direction: column;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+      background: url("../../assets/operator.png");
+      background-repeat: no-repeat;
+      // background-size: fit;
+
+      //   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      //     url("../../assets/operator.png");
+      border-radius: 12px;
+      position: relative;
+      width: 972px;
+      height: 606.23px;
+      @media screen and (max-width: 1413px) {
+        margin-left: -20%;
+        width: 50vw;
+      }
+      @media screen and (max-width: 1316px) {
+        margin-left: -22%;
+      }
+      @media screen and (max-width: 989px) {
+        margin-left: 0;
+        width: 100% !important;
+        background-size: 100%;
+        // border: 2px solid green;
+        // height: rem.convert(204px);
+      }
+      @media screen and (max-width: 862px) {
+          // background: url("../../assets/operator2.png");
+        // background-size: contain;
+        height: 304px;
+     
+        // height: 100%;
+        // border: 2px solid red;
+      }
+      // margin-left: -20%;
+      //   border: 2px solid green;
+
+      .support_company {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        border-radius: 0px 12px 0px 0px;
+        background: #0c0932;
+        position: absolute;
+        bottom: 0;
+        left: 110px;
+        padding: 2.5rem 1.8rem;
+           border-radius: 0 0 0  10px;
+        // min-width: 23.3rem;
+        width: rem.convert(367px);
+        @media screen and (max-width: 1413px) {
+          width: rem.convert(367px);
+          left: 80px;
+        }
+        @media screen and (max-width: 1090px) {
+          padding: 2rem 1.5rem;
+        }
+
+        @media screen and (max-width: 989px) {
+          // width: rem.convert(228px);
+           height: rem.convert(150px);
+          left: 0;
+          bottom: 0;
+        }
+        @media screen and (max-width: 862px) {
+          height: 200px;
+          row-gap: .5rem;
+        }
+
+        .support_company_cont {
+          display: flex;
+          column-gap: 10px;
+          //   justify-content: center;
+          align-items: center;
+          .support_company_text {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffff;
+            max-width: 14rem;
+            @media screen and (max-width: 1090px) {
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 24px;
+              color: #ffffff;
+              max-width: 12rem;
+            }
+            @media screen and (max-width: 866px) {
+              max-width: 30rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

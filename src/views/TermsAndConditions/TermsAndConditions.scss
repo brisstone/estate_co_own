@@ -1,0 +1,6 @@
+.laundry_btn {
+  width: 445px;
+  @media screen and (max-width: 525px) {
+    width: 100%;
+  }
+}

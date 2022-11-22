@@ -1,0 +1,44 @@
+.card_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: #f5f5f8;
+  border-radius: 8px;
+  row-gap: 20px;
+  // border: 2px solid green;
+  // width: 20px !important;
+
+  @media screen and (max-width: 750px) {
+    max-width: 100% !important;
+  }
+  @media screen and (max-width: 525px) {
+    height: 322px !important;
+    width: 277px !important;
+  }
+
+  .card_content {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.342px;
+    color: #0c0932;
+  }
+
+  .card_image {
+    width: 56px;
+    height: 56px;
+  }
+
+  .card_author {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+  }
+  .card_author_name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.03em;
+    color: #0c0932;
+  }
+}

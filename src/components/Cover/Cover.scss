@@ -1,0 +1,43 @@
+.cover_wrapper {
+  height: 543px;
+  background: url("../../assets/coverbg.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 525px) {
+    padding: 0 10px;
+  }
+
+  .cover_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    color: #07c168;
+    margin-bottom: 10px;
+    @media screen and (max-width: 525px) {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 42px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: #07c168;
+    }
+  }
+  .cover_content {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    @media screen and (max-width: 525px) {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}
