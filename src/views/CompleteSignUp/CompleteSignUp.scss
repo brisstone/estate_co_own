@@ -1,0 +1,90 @@
+.complete_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    //   align-items: center;
+    height: 100vh;
+  
+    &_content {
+      padding: 70px;
+      display: flex;
+      flex-direction: column;
+      // justify-content: flex-start;
+      align-items: flex-start;
+      // justify-content: center;
+      width: 50%;
+      @media only screen and (max-width: 734px) {
+        width: 100%;
+      }
+      @media only screen and (max-width: 534px) {
+        padding: 20px;
+       }
+  
+      &_logo {
+        margin-bottom: 72px;
+      }
+  
+      &_header {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        color: #0c0932;
+        margin-bottom: 16px;
+        @media only screen and (max-width: 534px) {
+          font-size: 16px;
+         }
+      }
+  
+      &_text {
+        border: 2px solid orange;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+      //   max-width: 391px;
+        font-weight: 400;
+        //   font-size: 16px;
+        color: #535353;
+          margin-bottom: 48px;
+      }
+  
+      &_label {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #0c0932;
+        margin-bottom: 8px;
+        @media only screen and (max-width: 534px) {
+          font-size: 14px;
+         }
+      }
+      &_button {
+        width: 100%;
+        margin-top: 52px;
+
+        &_appButtonEle {
+          height: 56px;
+          font-size: 18;
+          @media only screen and (max-width: 534px) {
+            height: 48px;
+            font-size: 16px;
+          }
+        }
+      }
+      &_input {
+        width: 100%;
+        margin-bottom: 24px;
+      }
+    }
+  
+    &_cover {
+      width: 50%;
+      @media only screen and (max-width: 734px) {
+        display: none;
+        visibility: hidden;
+      }
+    }
+  }
+  
+ 
+  

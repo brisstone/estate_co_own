@@ -9,6 +9,9 @@ import PrivacyPolicy from "./views/PrivacyPolicy/PrivacyPolicy";
 import TermsAndConditions from "./views/TermsAndConditions/TermsAndConditions";
 import LaunderingPolicy from "./views/LaunderingPolicy/LaunderingPolicy";
 import Fees from "./views/Fees/Fees";
+import SignUp from "./views/SignUp/SignUp";
+import EmailVerification from "./views/EmailVerification/EmailVerification";
+import CompleteSignUp from "./views/CompleteSignUp/CompleteSignUp";
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
            <Route exact path="terms-conditions" element={<TermsAndConditions />} />
             <Route exact path="anti-money-laundering-policy" element={<LaunderingPolicy />} />
              <Route exact path="fees" element={<Fees />} />
+             <Route exact path="signup" element={<SignUp />} />
+             <Route exact path="email-verification" element={<EmailVerification />} />
+             <Route exact path="complete-signup" element={<CompleteSignUp />} />
         </Routes>
       </BrowserRouter>
     </div>

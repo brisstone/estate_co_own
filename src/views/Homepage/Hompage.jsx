@@ -596,7 +596,7 @@ export default function Hompage() {
           style={{ width: "350px" }}
           className="offering_btn"
           onClick={() =>
-            (window.location.href = "https://web.fragvest.com/sign-up")
+            (window.location.href = "/signup")
           }
         >
           Sign Up Now

@@ -36,7 +36,7 @@ const AppNav = () => {
           <AppButton
             className="nav_sign_txt"
             style={{ width: "209px", height: "48px", fontSize: "" }}
-            onClick={() => (window.location.href = "https://web.fragvest.com")}
+            onClick={() => (window.location.href = "/signup")}
           >
             Sign Up/Sign In
           </AppButton>
@@ -94,7 +94,7 @@ const AppNav = () => {
                 marginTop: "106px",
               }}
               onClick={() =>
-                (window.location.href = "https://web.fragvest.com")
+                (window.location.href = "/signup")
               }
             >
               Sign Up/Sign In
