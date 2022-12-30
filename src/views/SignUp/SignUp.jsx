@@ -1,4 +1,4 @@
-import { notification } from "antd";
+import { message, notification } from "antd";
 import axios from "axios";
 import React, { useState } from "react";
 import LoginCover from "../../assets/loginCover.png";
@@ -9,21 +9,40 @@ import "./SignUp.scss";
 
 export default function SignUp() {
   const [email, setemail] = useState();
+  const [message, setmessage] = useState(false);
+
   const getToken = async (email) => {
-    // /resend-verification-link/{email}
-    console.log(email);
-    if(!email){
-    return notification.error({
+
+    if (!email) {
+      return notification.error({
         message: "Error",
         description: "Email is Required!!",
         // duration: 6000000
       });
     }
-    const result = await axios.post(
-      `https://admin.fragvest.com/api/v1/resend-verification-link/${email}`
-    );
-    console.log(result, "kkkkkkk");
-    // window.location.href = "/complete-signup";
+
+    try {
+      const result = await axios.post(
+        `https://admin.fragvest.com/api/v1/resend-verification-link/${email}`
+      );
+      console.log(result, "kkkkkkk");
+      // window.location.href = "/complete-signup";
+      setmessage(true);
+      notification.success({
+        message: "Success",
+        description: result.data.message,
+        // duration: 6000000
+      });
+
+      // window.location.href = "/complete-signup";
+    } catch (error) {
+      console.log(error.response);
+      notification.error({
+        message: "Error",
+        description: error.response.data.message,
+        // duration: 6000000
+      });
+    }
   };
 
   return (
@@ -39,7 +58,7 @@ export default function SignUp() {
           Verification code will be sent to you. Make sure you can acess your
           email
         </div>
-         {/* <form 
+        {/* <form 
         ref={formRef} onSubmit={handleSubmit}
         ></form> */}
         <div className="login_container_content_label">Email Address</div>
@@ -56,7 +75,6 @@ export default function SignUp() {
           />
         </div>
 
-       
         <div className="login_container_content_button">
           <AppButton
             className=""
@@ -69,8 +87,22 @@ export default function SignUp() {
             // onClick={() => (window.location.href = "/email-verification")}
             onClick={() => getToken(email)}
           >
-            Create Account
+            {message ? "Resend" : "Create Account"}
           </AppButton>
+          {message && (
+            <AppButton
+              className=""
+              style={{
+                height: "56px",
+                fontSize: "18px",
+                width: "100%",
+                marginTop: "10px",
+              }}
+              onClick={() => (window.location.href = "/email-verification")}
+            >
+              Proceed
+            </AppButton>
+          )}
         </div>
       </div>
       <div className="login_container_cover">
