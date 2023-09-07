@@ -2,7 +2,6 @@ import React from "react";
 import "./StoreApp.scss";
 import apple from "../../assets/apple.png";
 import android from "../../assets/android.png";
-import iphone13 from "../../assets/iPhone13.webp";
 
 const StoreApp = () => {
   return (

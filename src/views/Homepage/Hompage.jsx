@@ -596,7 +596,7 @@ export default function Hompage() {
           style={{ width: "350px" }}
           className="offering_btn"
           onClick={() =>
-            (window.location.href = "/signup")
+            (window.location.href = "/signup/0000")
           }
         >
           Sign Up Now

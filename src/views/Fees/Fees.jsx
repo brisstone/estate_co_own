@@ -71,8 +71,8 @@ const Fees = () => {
             <div>
               <div className="green_header">Fees & How they affect me</div>
               <div>
-                height: 66px; width: 714px; left: 0px; top: 63px; border-radius:
-                nullpx;
+                {/* height: 66px; width: 714px; left: 0px; top: 63px; border-radius:
+                nullpx; */}
               </div>
             </div>
             <div>

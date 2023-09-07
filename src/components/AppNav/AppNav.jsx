@@ -36,7 +36,7 @@ const AppNav = () => {
           <AppButton
             className="nav_sign_txt"
             style={{ width: "209px", height: "48px", fontSize: "" }}
-            onClick={() => (window.location.href = "/signup")}
+            onClick={() => (window.location.href = "/signup/0000")}
           >
             Sign Up/Sign In
           </AppButton>
@@ -94,7 +94,7 @@ const AppNav = () => {
                 marginTop: "106px",
               }}
               onClick={() =>
-                (window.location.href = "/signup")
+                (window.location.href = "/signup/0000")
               }
             >
               Sign Up/Sign In

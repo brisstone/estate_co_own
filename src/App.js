@@ -13,6 +13,7 @@ import SignUp from "./views/SignUp/SignUp";
 import EmailVerification from "./views/EmailVerification/EmailVerification";
 import CompleteSignUp from "./views/CompleteSignUp/CompleteSignUp";
 
+
 function App() {
   return (
     <div className="App">
@@ -27,9 +28,10 @@ function App() {
            <Route exact path="terms-conditions" element={<TermsAndConditions />} />
             <Route exact path="anti-money-laundering-policy" element={<LaunderingPolicy />} />
              <Route exact path="fees" element={<Fees />} />
-             <Route exact path="signup" element={<SignUp />} />
+             <Route exact path="signup/:referralId" element={<SignUp />} />
+             <Route exact path="complete-signup/:email" element={<CompleteSignUp />} />
              <Route exact path="email-verification" element={<EmailVerification />} />
-             <Route exact path="complete-signup" element={<CompleteSignUp />} />
+            
         </Routes>
       </BrowserRouter>
     </div>

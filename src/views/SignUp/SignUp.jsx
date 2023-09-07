@@ -6,10 +6,19 @@ import Logo2 from "../../assets/logo2.png";
 import AppButton from "../../components/Button/AppButton";
 import TextInput from "../../components/Input/TextInput";
 import "./SignUp.scss";
+import { useParams } from "react-router-dom";
+import { Router } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { baseUrl } from "../../utils";
+
 
 export default function SignUp() {
   const [email, setemail] = useState();
   const [message, setmessage] = useState(false);
+
+  let navigate = useNavigate();
+  const {referralId} = useParams()
+
 
   const getToken = async (email) => {
 
@@ -22,11 +31,10 @@ export default function SignUp() {
     }
 
     try {
+      
       const result = await axios.post(
-        `https://admin.fragvest.com/api/v1/resend-verification-link/${email}`
+        `${baseUrl}/resend-verification-link/${email}`
       );
-      console.log(result, "kkkkkkk");
-      // window.location.href = "/complete-signup";
       setmessage(true);
       notification.success({
         message: "Success",
@@ -35,6 +43,8 @@ export default function SignUp() {
       });
 
       // window.location.href = "/complete-signup";
+   
+
     } catch (error) {
       console.log(error.response);
       notification.error({
@@ -98,7 +108,7 @@ export default function SignUp() {
                 width: "100%",
                 marginTop: "10px",
               }}
-              onClick={() => (window.location.href = "/email-verification")}
+              onClick={() =>    navigate("/email-verification", { state: { referralId: referralId, email:email } })}
             >
               Proceed
             </AppButton>

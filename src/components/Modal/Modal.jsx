@@ -3,8 +3,10 @@ import styles from "./Modal.module.scss";
 import { RiCloseLine } from "react-icons/ri";
 import Checked from "../../assets/checked.png";
 import AppButton from "../Button/AppButton";
+import useAppDownloader from '../../hooks/useAppDownloader'
 
 const Modal = ({ setIsOpen }) => {
+  const { download } = useAppDownloader()
   return (
     <>
       <div className={styles.darkBG} onClick={() => setIsOpen(false)} />
@@ -49,7 +51,7 @@ const Modal = ({ setIsOpen }) => {
                 //   marginTop: "106px",
               }}
               
-              onClick={() => {setIsOpen(false); (window.location.href = "/#store")}}
+              onClick={() => {setIsOpen(false); download() }}
             >
               Get App
             </AppButton>
