@@ -33,6 +33,11 @@ const AppNav = () => {
               Contact Us
             </Link>
           </div>
+          <div>
+            <Link to="/blog" style={{ color: "#ffffff" }}>
+              Blog
+            </Link>
+          </div>
           <AppButton
             className="nav_sign_txt"
             style={{ width: "209px", height: "48px", fontSize: "" }}
@@ -84,6 +89,11 @@ const AppNav = () => {
             <div>
               <Link to="/contact" style={{ color: "#ffffff" }}>
                 Contact Us
+              </Link>
+            </div>
+            <div>
+              <Link to="/blog" style={{ color: "#ffffff" }}>
+                Blog
               </Link>
             </div>
             <AppButton

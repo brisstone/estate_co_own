@@ -112,14 +112,14 @@ const About = () => {
                 We Are Your Real Estate Messenger
               </div>
               <div className="secondary_header">
-                Fragvestment Ltd is a technology company in the real estate
-                business, we provide you services through our online store
-                called Fragvest
+              Fragvest is a tool created to give you easier and safer access to real estate services.
               </div>
               <div className="secondary_header">
-                Fragvest is designed to help you avoid real estate fraud, remove
-                the stressful house-hunting process and own, rent, sell or
-                co-own a property
+              We designed fragvest to help you avoid real estate fraud and remove the stressful house-hunting process, whenever you need a property to live or earn from.
+              </div>
+              <div className="secondary_header">
+
+              At Fragvest we pride ourselves in offering you straightforward transactions that will bring you freedom and prosperity.
               </div>
               <div
                 style={{ zIndex: "10000" }}
@@ -129,19 +129,6 @@ const About = () => {
                   Contact Us
                 </Link>
               </div>
-              {/* <AppButton
-                className="app_btn_standard_link"
-                style={{ color: "#ffffff", marginTop: "1rem" }}
-              >
-                <Link to="/contact" style={{ color: "#ffffff" }}>
-                  Contact Us
-                </Link>
-              </AppButton> */}
-              {/* <AppButton type="ghost" lg="lg" className="app_btn_standard_link">
-                <Link to="/" style={{ color: "#ffffff" }}>
-                  Learn More
-                </Link>
-              </AppButton> */}
             </div>
           </div>
         ))}

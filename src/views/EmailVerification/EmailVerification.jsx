@@ -63,11 +63,9 @@ export default function EmailVerification() {
     console.log(result, "kkkkkkk");
     window.location.href = "/complete-signup";
   };
+  
   return (
     <div className="emailv_container">
-    
-      
-    
       <div className="emailv_container_content">
         <div className="emailv_container_content_logo">
           <img src={Logo2} alt={Logo2} />

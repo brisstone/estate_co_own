@@ -12,6 +12,8 @@ import Fees from "./views/Fees/Fees";
 import SignUp from "./views/SignUp/SignUp";
 import EmailVerification from "./views/EmailVerification/EmailVerification";
 import CompleteSignUp from "./views/CompleteSignUp/CompleteSignUp";
+import Blog from "./views/Blog/Blog";
+import BlogDetails from "./views/BlogDetails/BlogDetails";
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
           <Route path="/" element={<Hompage />}></Route>
           <Route exact path="about" element={<About />} />
           <Route path="contact" element={<ContactUs />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="blog/:id" element={<BlogDetails />} />
 
           <Route exact path="faq" element={<FaqView />} />
           <Route exact path="privacy-policy" element={<PrivacyPolicy />} />
